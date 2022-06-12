@@ -1,0 +1,22 @@
+.section-functional {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.section-functional__header {
+    margin-bottom: 70px;
+}
+
+.section-functional__title {
+    margin-bottom: 40px;
+}
+
+
+
+
+.section-functional__row {
+    display: flex;
+    gap: 30px;
+    flex-shrink: 0;
+}

@@ -1,4 +1,5 @@
 // Base
+@import "./base/vars";
 @import "./base/base";
 
 // Blocks
@@ -6,6 +7,13 @@
 @import "./blocks/header";
 @import "./blocks/_button-round";
 @import "./blocks/form";
+@import "./blocks/section-functional";
+@import "./blocks/_title";
+@import "./blocks/subtitle";
+@import "./blocks/card";
+@import "./blocks/section-cta";
+@import "./blocks/section-tasks";
+@import "./blocks/section-focus";
 
 
 // Media

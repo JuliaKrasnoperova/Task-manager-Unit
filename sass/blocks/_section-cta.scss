@@ -1,0 +1,39 @@
+.section-cta {
+    position: relative;
+    padding-top: 83px;
+    padding-bottom: 84px;
+    background-image: url(./../img/section-cta/section-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    }
+}
+
+
+
+.section-cta__content {
+    position: relative;
+    z-index: 9;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.section-cta__title {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1;
+
+    span {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
