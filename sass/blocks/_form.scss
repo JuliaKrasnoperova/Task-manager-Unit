@@ -23,32 +23,3 @@ input:focus {
     outline: none;
     background: rgba(0, 0, 0, 1);
 }
-
-.button {
-    height: 60px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 30px;
-    border: none;
-    background: #00C470;
-    cursor: pointer;
-    transition: 0.3s;
-
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 17px;
-
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-}
-
-.button:hover {
-    background: #089b5b;
-}
-
-button:focus {
-    outline: none;
-    background: #057545;
-}

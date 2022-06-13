@@ -1,22 +1,14 @@
 .header {
     position: relative;
     height: 870px;
-    background-image: url(./../img/header/header-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include bgImage("./../img/header/header-bg.jpg");
+
+    &::before {
+        @extend %overlay;
+    }
 }
 
-.header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
 
-}
 
 .header__wrapper {
     padding-top: 60px;
