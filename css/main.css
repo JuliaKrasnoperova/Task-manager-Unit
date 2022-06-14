@@ -649,6 +649,119 @@ input:focus {
   color: #fff;
 }
 
+.section-clients {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-clients__header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section-clients__title {
+  margin-bottom: 40px;
+}
+
+.section-clients__slider {
+  margin-left: auto;
+  margin-right: auto;
+  width: 770px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__arrow {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #F5F5F5;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.slider__arrow--left {
+  left: -46px;
+  top: 53px;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+}
+.slider__arrow--right {
+  right: -46px;
+  top: 53px;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+}
+
+.slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-item__text {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+  color: #000000;
+}
+.slider-item__text p {
+  margin-bottom: 15px;
+}
+
+.slider-item__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-item__avatar {
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+  border: radius 50%;
+  overflow: hidden;
+}
+
+.slider-item__author-desc {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.slider-item__author-title {
+  display: block;
+  margin-bottom: 5px;
+  color: #00C470;
+}
+
+.slider-item__author-name {
+  display: block;
+  color: #808080;
+}
+
 /* Tablet */
 @media (max-width: 1199px) {
   .container {
