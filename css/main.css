@@ -463,6 +463,9 @@ legend {
   text-align: center;
   color: rgba(255, 255, 255, 0.3);
 }
+.footer__copyright span {
+  font-weight: 700;
+}
 
 .footer__copyright p + p {
   margin-top: 15px;
