@@ -3,26 +3,27 @@
 @import "./base/_mixins";
 @import "./base/base";
 
-// Blocks
+// Sections
+@import "./sections/header";
+@import "./sections/section-functional";
+@import "./sections/section-cta";
+@import "./sections/section-tasks";
+@import "./sections/section-focus";
+@import "./sections/section-price";
+@import "./sections/section-clients";
+@import "./sections/_footer";
 
-@import "./blocks/header";
+// Blocks
 @import "./blocks/_button-round";
 @import "./blocks/form";
 @import "./blocks/button";
-@import "./blocks/section-functional";
 @import "./blocks/_title";
 @import "./blocks/subtitle";
 @import "./blocks/card";
-@import "./blocks/section-cta";
-@import "./blocks/section-tasks";
-@import "./blocks/section-focus";
-@import "./blocks/section-price";
-@import "./blocks/package";
+@import "./blocks/_package";
 @import "./blocks/button-outline";
 @import "./blocks/button-solid";
-@import "./blocks/section-clients";
 @import "./blocks/slider";
-@import "./blocks/_footer";
 
 
 // Media
