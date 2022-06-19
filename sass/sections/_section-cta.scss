@@ -8,6 +8,23 @@
     &::before {
         @extend %overlay;
     }
+
+    /*Tablet media */
+    @media (max-width: 1199px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @include bgImage("./../img/section-cta/tablet-bg.jpg");
+    }
+
+    /*Mobile media */
+    @media (max-width: 899px) {
+        @include bgImage("./../img/section-cta/mobile-bg.jpg");
+    }
+
+    /*Mobile XS media */
+    @media (max-width: 599px) {
+        @include bgImage("./../img/section-cta/xs-mobile-bg.jpg");
+    }
 }
 
 
@@ -29,4 +46,17 @@
         font-weight: 700;
         text-transform: uppercase;
     }
+
+    /* Mobile media */
+    @media (max-width: 899px) {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    /*Mobile XS media */
+    @media (max-width: 599px) {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
 }

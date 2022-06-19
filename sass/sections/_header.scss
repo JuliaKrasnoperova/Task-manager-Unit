@@ -5,6 +5,21 @@
     &::before {
         @extend %overlay;
     }
+
+    /*Tablet media */
+    @media (max-width: 1199px) {
+        @include bgImage("./../img/header/tablet-bg.jpg");
+    }
+
+    /*Mobile media */
+    @media (max-width: 899px) {
+        @include bgImage("./../img/header/mobile-bg.jpg");
+    }
+
+    /*Mobile XS media */
+    @media (max-width: 599px) {
+        @include bgImage("./../img/header/xs-mobile-bg.jpg");
+    }
 }
 
 
