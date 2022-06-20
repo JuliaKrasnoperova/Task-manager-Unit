@@ -65,6 +65,7 @@
 
         img {
             max-width: 100%;
+            margin: 0 auto;
         }
     }
 }
@@ -138,6 +139,7 @@
     /*Mobile media */
     @media (max-width: 899px) {
         line-height: 1.7;
+        margin: 0 auto;
     }
 
 }

@@ -1,5 +1,13 @@
 .slider {
     position: relative;
+    padding-bottom: 54px;
+
+    /*Mobile media */
+    @media (max-width: 899px) {
+        padding-bottom: 44px;
+    }
+
+    /*Mobile XS media */
 }
 
 .slider__arrow {
@@ -18,12 +26,22 @@
         left: -46px;
         top: 53px;
         transform: translate(-100%);
+
+
+        @media (max-width: 949px) {
+            left: -30px;
+        }
     }
 
     &--right {
         right: -46px;
         top: 53px;
         transform: translate(100%);
+
+
+        @media (max-width: 949px) {
+            right: -30px;
+        }
     }
 
     /*Mobile XS media */
@@ -34,9 +52,9 @@
 
 .slider__pagination {
     position: absolute;
-    bottom: -50px;
+    bottom: 0px;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translateX(-50%);
     display: flex;
     gap: 10px;
 
