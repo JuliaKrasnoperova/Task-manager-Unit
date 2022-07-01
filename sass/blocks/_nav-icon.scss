@@ -1,0 +1,101 @@
+// Ширина и высота линии в иконке
+$lineWidth: 20px;
+$lineHeight: 3px;
+
+$radius: 2px;
+$lineMargin: 4px;
+
+// Размеры контейнера
+$width: $lineWidth;
+$height: $lineHeight;
+
+
+$color: #000;
+
+.nav-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+
+    &:hover {
+        background: #00C470;
+
+        .nav-icon__middle,
+        .nav-icon__middle::before,
+        .nav-icon__middle::after {
+            background: #fff;
+        }
+    }
+
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.nav-icon__middle {
+    position: relative;
+    width: $width;
+    height: $height;
+    background-color: $color;
+    border-radius: $radius;
+
+    &::before {
+        content: "";
+        width: $lineWidth;
+        height: $lineHeight;
+        background-color: $color;
+        position: absolute;
+        top: -($lineHeight + $lineMargin);
+        left: 0;
+        border-radius: $radius;
+        transition: 0.2s ease-in;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    &::after {
+        content: "";
+        width: $lineWidth;
+        height: $lineHeight;
+        background-color: $color;
+        position: absolute;
+        top: $lineHeight + $lineMargin;
+        left: 0;
+        transition: 0.2s ease-in;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        border-radius: $radius;
+    }
+
+}
+
+
+/* Active state */
+.nav-icon.nav-icon--active {
+    position: fixed;
+    z-index: 9;
+}
+
+.nav-icon.nav-icon--active .nav-icon__middle {
+    background-color: transparent;
+
+    &::before {
+        transform: rotate(45deg);
+        top: 0;
+
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+        top: 0;
+
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+}

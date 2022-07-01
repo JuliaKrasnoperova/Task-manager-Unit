@@ -1,5 +1,6 @@
 .header {
     position: relative;
+    z-index: 99;
     @include bgImage("./../img/header/header-bg.jpg");
 
     &::before {
@@ -70,6 +71,10 @@
     @media (max-width: 899px) {
         margin-bottom: 30px;
     }
+}
+
+.header__buttons-seach {
+    margin-left: auto;
 }
 
 
