@@ -9,8 +9,8 @@
 
     <!-- Title and SEO -->
     <title>Проект Юнит - Таск менеджер</title>
-    <meta name="description" content="Описание страницы" />
-    <meta name="keywords" content="ключевые слова, фразы" />
+    <meta name="description" content="Управление задачами и проектами из любой точки вместе с ЮНИТ" />
+    <meta name="keywords" content="управление задачами, управление проектами, проекты, задачи, таскменеджер" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/main.css" />
@@ -18,12 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
 
-    <!-- Open Graph -->
-    <!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Туристическое агентство Форест Тревел" />
-    <meta property="og:description" content="Турпоходы по дикой природе" />
-    <meta property="og:image" content="./img/opengraph.jpg" />
+    <!-- Owl Carousel2 -->
+    <link rel="stylesheet" href="./libs/OwlCarousel2/assets/owl.carousel.min.css">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
@@ -42,7 +38,7 @@
     <header class="header">
         <div class="header__wrapper">
             <div class="header__buttons">
-                <button class="nav-icon">
+                <button class="header__buttons-nav-icon nav-icon">
                     <div class="nav-icon__middle"></div>
                 </button>
                 <nav class="nav">
@@ -240,19 +236,38 @@
                 <h3 class="section-clients__subtitle subtitle">Что говорят пользователи</h3>
             </div>
             <div class="section-clients__slider">
-                <div class="slider">
-                    <button class="slider__arrow slider__arrow--left">
-                        <img src="./img/slider/arrow-left.svg" alt="arrow">
-                    </button>
-                    <button class="slider__arrow slider__arrow--right">
-                        <img src="./img/slider/arrow-right.svg" alt="arrow">
-                    </button>
-                    <div class="slider__pagination">
-                        <button class="slider__pagination-item"></button>
-                        <button class="slider__pagination-item slider__pagination-item--active"></button>
-                        <button class="slider__pagination-item"></button>
-                        <button class="slider__pagination-item"></button>
-                        <button class="slider__pagination-item"></button>
+                <button class="slider__arrow slider__arrow--left" id="sliderPrev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="slider__arrow-svg">
+                            <path d="M20 12H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10 18L4 12L10 6" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+                <button class="slider__arrow slider__arrow--right" id="sliderNext">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="slider__arrow-svg">
+                            <path d="M4 12H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14 6L20 12L14 18" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+                <div class="slider owl-carousel owl-theme" id="clients-slider">
+                    <div class="slider-item">
+                        <p class="slider-item__text"> Это потрясающее приложение которое помогло мне завершить все мои
+                            дела, и
+                            сделать дипломный проект раньше срока. </p>
+                        <div class="slider-item__author">
+                            <div class="slider-item__avatar">
+                                <img src="./img/slider/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="slider-item__author-desc">
+                                <span class="slider-item__author-title">Фрилансер</span>
+                                <p class="slider-item__author-name">Николай Остапов</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="slider-item">
                         <p class="slider-item__text"> Это потрясающее приложение которое помогло мне завершить все мои
@@ -268,7 +283,20 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="slider-item">
+                        <p class="slider-item__text"> Это потрясающее приложение которое помогло мне завершить все мои
+                            дела, и
+                            сделать дипломный проект раньше срока. </p>
+                        <div class="slider-item__author">
+                            <div class="slider-item__avatar">
+                                <img src="./img/slider/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="slider-item__author-desc">
+                                <span class="slider-item__author-title">Фрилансер</span>
+                                <p class="slider-item__author-name">Николай Остапов</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -294,7 +322,10 @@
             </div>
         </div>
     </footer>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./libs/jquery-3.6.0.slim.min.js"></script>
+    <script src="./libs/OwlCarousel2/owl.carousel.min.js"></script>
+    <script src="./js/clients-carousel.js"></script>
 </body>
 
 </html>

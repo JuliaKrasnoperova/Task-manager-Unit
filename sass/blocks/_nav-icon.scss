@@ -78,7 +78,7 @@ $color: #000;
 /* Active state */
 .nav-icon.nav-icon--active {
     position: fixed;
-    z-index: 9;
+    z-index: 999;
 }
 
 .nav-icon.nav-icon--active .nav-icon__middle {

@@ -18,6 +18,7 @@
 }
 
 .nav.nav--active {
+    z-index: 99;
     top: 0;
     opacity: 1;
     transition: all 0.2s ease-in;

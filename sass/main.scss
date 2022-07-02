@@ -28,6 +28,13 @@
 @import "./blocks/_search";
 
 
+// OwlCarousel Theme
+
+@import "./owlcarousel-clients-theme/vars";
+@import "./owlcarousel-clients-theme/theme";
+
+
+
 // Media
 
 @import "./media/media.scss";

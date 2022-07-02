@@ -1,3 +1,4 @@
+// Работа с навигацией
 const navIcon = document.querySelector('.nav-icon');
 const nav = document.querySelector('.nav');
 
@@ -17,4 +18,18 @@ navLinks.forEach(function (item) {
         navIcon.classList.remove('nav-icon--active'); // Убираем активный класс у иконки мобильной навигации
         nav.classList.remove('nav--active'); // Убираем активный класс у блока мобю навигации
     })
+})
+
+// Работа с формой поиска
+const searchForm = document.querySelector('.search');
+const searchButton = document.querySelector('.search__button');
+
+searchButton.addEventListener('click', function (e) {
+    if (searchForm.classList.contains('search--visible')) {
+
+    } else {
+        e.preventDefault(); // отмена стандартного поведения формы для отправки данных
+        searchForm.classList.toggle('search--visible');
+    }
+
 })
