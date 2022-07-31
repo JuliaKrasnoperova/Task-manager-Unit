@@ -15,24 +15,13 @@ $color: #000;
 .nav-icon {
     width: 60px;
     height: 60px;
-    border-radius: 50%;
     border: none;
     display: flex;
+    border-radius: 100%;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: 0.2s ease-in;
-
-    &:hover {
-        background: #00C470;
-
-        .nav-icon__middle,
-        .nav-icon__middle::before,
-        .nav-icon__middle::after {
-            background: #fff;
-        }
-    }
-
 
     &:focus {
         outline: none;
@@ -44,7 +33,6 @@ $color: #000;
     width: $width;
     height: $height;
     background-color: $color;
-    border-radius: $radius;
 
     &::before {
         content: "";
@@ -54,7 +42,6 @@ $color: #000;
         position: absolute;
         top: -($lineHeight + $lineMargin);
         left: 0;
-        border-radius: $radius;
         transition: 0.2s ease-in;
         transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
     }
@@ -69,7 +56,6 @@ $color: #000;
         left: 0;
         transition: 0.2s ease-in;
         transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
-        border-radius: $radius;
     }
 
 }
